@@ -356,71 +356,25 @@ h1, h2, h3, h4, h5, h6 {
 .project .close-project {
   top: 30px; }
 
-.project1 {
+.gopass-project {
   background: url(../images/p2.png);
   width: 100%;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat; }
-  .project1 img {
+  .gopass-project img {
     width: 100%;
     float: left;
     display: inline-block;
     padding: 50px; }
-  .project1 a {
+  .gopass-project a {
     color: #fff;
     font-size: 20px;
     font-weight: 100;
     border: 1px solid #fff;
     padding: 20px;
     background: rgba(37, 37, 37, 0.6); }
-  .project1 h4 {
-    text-align: center;
-    padding: 231px 0;
-    background: rgba(114, 173, 171, 0.5); }
-
-.project2 {
-  background: url(../images/p1.png);
-  width: 100%;
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  .project2 img {
-    width: 100%;
-    float: left;
-    display: inline-block;
-    padding: 50px; }
-  .project2 a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 100;
-    border: 1px solid #fff;
-    padding: 20px;
-    background: rgba(37, 37, 37, 0.6); }
-  .project2 h4 {
-    text-align: center;
-    padding: 231px 0;
-    background: rgba(114, 173, 171, 0.5); }
-
-.project3 {
-  background: url(../images/p3.png);
-  width: 100%;
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  .project3 img {
-    width: 100%;
-    float: left;
-    display: inline-block;
-    padding: 50px; }
-  .project3 a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 100;
-    border: 1px solid #fff;
-    padding: 20px;
-    background: rgba(37, 37, 37, 0.6); }
-  .project3 h4 {
+  .gopass-project h4 {
     text-align: center;
     padding: 231px 0;
     background: rgba(114, 173, 171, 0.5); }
