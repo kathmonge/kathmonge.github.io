@@ -1,0 +1,41 @@
+
+.fadeOutHome {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition-duration: 1.5s;
+    transition-property: width, height;
+    top: 0;
+    // background: #72ADAB;
+}
+
+.fadeInHome {
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 1.5s;
+    transition-property: width, height;
+    bottom: 0;
+    // background: #72ADAB;
+}
+
+.home-container {
+    width: 402px;
+    height: 152px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 50%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+    padding: 42px;
+
+    h2 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,114 @@
+.fadeOutProyects {
+	// position: static;
+    z-index: 1000;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition-duration: 1.5s;
+    transition-property: width, height;
+    top: 0;
+    background: #252525;
+}
+
+.fadeInProyects {
+	// position: static;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    transition-duration: 1.5s;
+    transition-property: width, height;
+    bottom: 0;
+    background: #252525;
+
+    .bg-nav {
+		width: 100%;
+		height: 40px;
+		background: #252525;
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+.fadeOutProyect {
+    z-index: 1000;
+    width: 100%;
+    height: 0%;
+    overflow: scroll;
+    transition-duration: .5s;
+    transition-property: width, height;
+    top: 0;
+    background: #252525;
+    position: absolute;
+}
+
+.fadeInProyect {
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    transition-duration: .5s;
+    transition-property: width, height;
+    top: 0;
+    background: #252525;
+    position: absolute;
+
+    .bg-nav {
+		width: 100%;
+		height: 40px;
+		background: #252525;
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+.project {
+
+	h4 {
+		color: #fff;
+	    font-size: 21px;
+	    font-weight: 100;
+	    position: absolute;
+	    right: 15%;
+	    padding: 100px 0;
+	}
+	p {
+		float: right;
+	    width: 50%;
+	    margin-top: 200px;
+	    font-size: 12px;
+	    color: #fff;
+	    line-height: 22px;
+	    letter-spacing: 1px;
+	}
+}
+
+.gopass-project {
+
+	.bg-project {
+		background: rgba(0, 0, 0, 0.75);
+	    width: 100%;
+	    position: absolute; 
+	    height: 500px;
+	    display: inline-block;
+	    float: left;
+	}
+
+	img {
+		width: 100%;
+	    float: left;
+		display: inline-block;
+		padding: 50px;
+	}
+	a {
+		color: #fff;
+	    font-size: 20px;
+	    font-weight: 100;
+	    border: 1px solid #fff;
+	    padding: 20px;
+	}
+	h4 {
+		text-align: center;
+	}
+}
+

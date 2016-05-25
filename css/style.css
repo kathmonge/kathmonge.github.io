@@ -1,0 +1,413 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%; }
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+ul, ol {
+  margin: 0; }
+
+p, li {
+  margin-bottom: 0.3em; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+.content {
+  position: absolute;
+  background: #72ADAB;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .content .background-home {
+    position: absolute;
+    background: #D2D2D2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  .content h1 {
+    float: left;
+    margin: 20px 40px;
+    z-index: 1014;
+    position: fixed; }
+    .content h1 a {
+      color: #fff;
+      font-weight: 100;
+      font-size: 14px; }
+  .content h2 {
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Poiret One', cursive;
+    font-weight: lighter; }
+  .content h3 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    line-height: 34px; }
+  .content nav {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    z-index: 1014;
+    width: 100%;
+    height: 40px;
+    background: rgba(132, 132, 132, 0.23);
+    padding: 11px 0px; }
+    .content nav a {
+      font-size: 16px;
+      color: #fff;
+      padding: 4px 20px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Poiret One', cursive; }
+
+.fadeInHome .home-container, .fadeInHome .contact-container, .fadeInHome .gopass-project, .fadeInHome .bg-nav, .fadeInHome .content-profile, .fadeInHome .image-profile, .fadeInAboutMe .home-container, .fadeInAboutMe .contact-container, .fadeInAboutMe .gopass-project, .fadeInAboutMe .bg-nav, .fadeInAboutMe .content-profile, .fadeInAboutMe .image-profile,
+.fadeInProyects .home-container,
+.fadeInProyects .contact-container,
+.fadeInProyects .gopass-project,
+.fadeInProyects .bg-nav,
+.fadeInProyects .content-profile,
+.fadeInProyects .image-profile, .fadeInContact .home-container, .fadeInContact .contact-container, .fadeInContact .gopass-project, .fadeInContact .bg-nav, .fadeInContact .content-profile, .fadeInContact .image-profile {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-fill-mode: forwards; }
+
+.fadeOutHome .home-container, .fadeOutHome .contact-container, .fadeOutHome .gopass-project, .fadeOutHome .bg-nav, .fadeOutHome .content-profile, .fadeOutHome .image-profile, .fadeOutAboutMe .home-container, .fadeOutAboutMe .contact-container, .fadeOutAboutMe .gopass-project, .fadeOutAboutMe .bg-nav, .fadeOutAboutMe .content-profile, .fadeOutAboutMe .image-profile,
+.fadeOutProyects .home-container,
+.fadeOutProyects .contact-container,
+.fadeOutProyects .gopass-project,
+.fadeOutProyects .bg-nav,
+.fadeOutProyects .content-profile,
+.fadeOutProyects .image-profile, .fadeOutContact .home-container, .fadeOutContact .contact-container, .fadeOutContact .gopass-project, .fadeOutContact .bg-nav, .fadeOutContact .content-profile, .fadeOutContact .image-profile {
+  animation-duration: .5s;
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-fill-mode: forwards; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+.inactiveAboutMe, .inactiveProyects, .inactiveContact {
+  color: #fff; }
+
+.activeAboutMe, .activeProyects, .activeContact {
+  color: #72ADAB !important;
+  border-bottom: 1px solid #72ADAB; }
+
+.fadeOutHome {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  top: 0; }
+
+.fadeInHome {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  bottom: 0; }
+
+.home-container {
+  width: 402px;
+  height: 152px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  left: 50%;
+  margin-left: -200px;
+  text-align: center;
+  padding: 42px; }
+  .home-container h2 {
+    font-size: 36px; }
+
+.fadeOutAboutMe {
+  z-index: 0;
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  transition-duration: 2s;
+  transition-property: width, height;
+  top: 0;
+  background: #fff; }
+
+.fadeInAboutMe {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  bottom: 0;
+  background: #fff; }
+  .fadeInAboutMe .bg-nav {
+    width: 100%;
+    height: 40px;
+    background: #252525;
+    position: fixed;
+    bottom: 0; }
+
+.about img {
+  width: 240px; }
+
+.image-profile {
+  width: 240px;
+  float: left; }
+
+.content-profile {
+  width: 70%;
+  float: right; }
+  .content-profile h2 {
+    color: #72adab; }
+  .content-profile h4 {
+    font-size: 26px;
+    font-family: 'Poiret One', cursive;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0; }
+  .content-profile p {
+    font-size: 12px;
+    width: 70%;
+    text-align: center;
+    margin: 40px auto 10px; }
+  .content-profile ul {
+    background: #72adab;
+    width: 50%;
+    margin: auto;
+    padding: 25px 0; }
+    .content-profile ul li {
+      margin-bottom: 0.3em;
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Poiret One', cursive;
+      font-weight: lighter;
+      padding: 5px;
+      margin: 0 45px; }
+    .content-profile ul h4 {
+      margin: auto;
+      font-size: 35px;
+      border: 1px solid #fff;
+      border-radius: 169px;
+      padding: 12px;
+      width: 70px;
+      height: 70px;
+      background: white; }
+      .content-profile ul h4 i {
+        color: #72adab; }
+  .content-profile a {
+    background: white;
+    color: #72adab;
+    padding: 10px 20px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    font-size: 14px; }
+
+.skills {
+  background: #72adab;
+  width: 95%;
+  height: 344px; }
+
+.code-skills {
+  width: 40%;
+  float: left;
+  margin: 5%; }
+
+.desing-skills {
+  width: 40%;
+  float: right;
+  margin: 5%; }
+
+.fadeOutProyects {
+  z-index: 1000;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  top: 0;
+  background: #252525; }
+
+.fadeInProyects {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  bottom: 0;
+  background: #252525; }
+  .fadeInProyects .bg-nav {
+    width: 100%;
+    height: 40px;
+    background: #252525;
+    position: fixed;
+    bottom: 0; }
+
+.fadeOutProyect {
+  z-index: 1000;
+  width: 100%;
+  height: 0%;
+  overflow: scroll;
+  transition-duration: .5s;
+  transition-property: width, height;
+  top: 0;
+  background: #252525;
+  position: absolute; }
+
+.fadeInProyect {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  transition-duration: .5s;
+  transition-property: width, height;
+  top: 0;
+  background: #252525;
+  position: absolute; }
+  .fadeInProyect .bg-nav {
+    width: 100%;
+    height: 40px;
+    background: #252525;
+    position: fixed;
+    bottom: 0; }
+
+.project h4 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 100;
+  position: absolute;
+  right: 15%;
+  padding: 100px 0; }
+.project p {
+  float: right;
+  width: 50%;
+  margin-top: 200px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 22px;
+  letter-spacing: 1px; }
+
+.gopass-project .bg-project {
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  position: absolute;
+  height: 500px;
+  display: inline-block;
+  float: left; }
+.gopass-project img {
+  width: 100%;
+  float: left;
+  display: inline-block;
+  padding: 50px; }
+.gopass-project a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  border: 1px solid #fff;
+  padding: 20px; }
+.gopass-project h4 {
+  text-align: center; }
+
+.fadeOutContact {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  top: 0;
+  background: #252525; }
+
+.fadeInContact {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+  transition-property: width, height;
+  bottom: 0;
+  background: #252525; }
+
+.contact-container {
+  width: 402px;
+  height: 166px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -200px;
+  text-align: center;
+  padding: 20px 0; }
+  .contact-container:hover {
+    border: 3px solid #72ADAB; }
+  .contact-container h2 {
+    font-size: 34px;
+    font-weight: 100; }
+    .contact-container h2:hover {
+      color: #72ADAB; }
+  .contact-container h3 {
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    padding: 5px 0 0; }
+    .contact-container h3:hover {
+      color: #72ADAB; }
+  .contact-container a {
+    color: #fff; }
+    .contact-container a .fa {
+      font-size: 21px;
+      padding: 20px; }
+    .contact-container a:hover {
+      color: #72ADAB; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="no-js" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="icon" href="images/icon-logo1.png">
+		<title>Kath Monge</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/font-awesome-4.6.2/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body onload="onDeviceReady()" ng-controller="mainController">
+		<div class="content">
+		<div class="background-home"></div>
+			<h1 ng-click="toggleHome()"><a href="#"><img src="images/logo.png"></a></h1>
+			<nav>
+				<a href="" ng-class="itemAboutMe" ng-click="toggleAboutMe()">Sobre mí</a>
+				<a href="" ng-class="itemProyects" ng-click="toggleProyects()">Proyectos</a>
+				<a href="" ng-class="itemContact" ng-click="toggleContact()">Contacto</a>
+			</nav>
+		</div>
+		
+		<section class="content" ng-class="home">
+			<div class="home-container">
+				<h2>Hola, soy Katherine.</h2>
+				<h3>Desarrolladora web.</h3>
+			</div>	
+		</section>
+
+		<section class="content about" ng-class="aboutMe">
+			<div class="image-profile">
+				<img src="images/profile1.jpg">
+			</div>
+			<div class="content-profile">
+				<p>Tengo 20 años, me gusta patinar y bailar. Disfruto cada detalle de la vida. Me gustan los retos y aprender cada día.</p>
+				<h4>Habilidades</h4>
+				<div class="skills">
+					<ul class="code-skills">
+						<h4><i class="fa fa-code" aria-hidden="true"></i></h4>
+						<li>HTML5</li>
+						<li>CSS3 / SASS</li>
+						<li>JS / JQuery / AngularJS</li>
+						<li>RWD</li>
+						<li>Git</li>
+						<li>Grunt</li>
+						<li>Ionic</li>
+						<li>Metodologias agiles(Scrum)</li>
+					</ul>
+					<ul class="desing-skills">
+						<h4><i class="fa fa-paint-brush" aria-hidden="true"></i></h4>
+						<li>Ilustrador</li>
+						<li>Photoshop</li>
+						<li>Sketck</li>
+					</ul>
+					<a href="images/CV.pdf">Ver mi CV</a>
+				</div>
+			</div>
+		<div class="bg-nav"></div>
+		</section>
+
+		<section class="content projects" ng-class="proyects">
+			<div class="gopass-project">
+				<img src="images/p2.png" ng-click="toggleProyect()">
+				<h4 ng-click="toggleProyect()"><a href="" ng-click="toggleProyect()">Muebles al alcance de su mano</a></h4>
+			</div>
+			<div class="gopass-project">
+				<img src="images/p3.png">
+				<h4><a href="">GoPass</a></h4>
+			</div>
+			<div class="gopass-project">
+				<img src="images/p1.png">
+				<h4><a href="">Tienda de Damas</a></h4>
+			</div>
+
+			<div class="bg-nav"></div>
+		</section>
+
+		<section class="project" ng-class="proyect">
+			<h4>Muebles al alcance de su mano</h4>
+			<img src="images/p2.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>		
+
+		<section class="content" ng-class="contact">
+			<div class="contact-container">
+				<a href=""><h2>bermukat@gmail.com</h2></a>
+				<a href=""><h3>8753 4546</h3></a>
+				<a href="https://www.linkedin.com/in/katherine-bermudez-ab8365a4?authType=name&authToken=j_vM&trk=hp-feed-member-name"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				<a href="https://github.com/KatherineBermudez"><i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+		</section>
+    	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!-- <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script> -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

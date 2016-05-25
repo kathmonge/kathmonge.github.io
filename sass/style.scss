@@ -1,0 +1,17 @@
+//
+// Parciales
+//
+
+// Parciales base
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/placeholders";
+@import "partials/base";
+@import "partials/layout";
+
+// Módulos
+@import "partials/modules/content";
+@import "partials/modules/home";
+@import "partials/modules/aboutme";
+@import "partials/modules/projects";
+@import "partials/modules/contact";
