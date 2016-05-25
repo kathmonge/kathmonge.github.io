@@ -76,27 +76,37 @@ h1, h2, h3, h4, h5, h6 {
       font-family: 'Josefin Sans', sans-serif;
       font-family: 'Poiret One', cursive; }
 
-.fadeInHome .home-container, .fadeInHome .contact-container, .fadeInHome .gopass-project, .fadeInHome .bg-nav, .fadeInHome .content-profile, .fadeInHome .image-profile, .fadeInAboutMe .home-container, .fadeInAboutMe .contact-container, .fadeInAboutMe .gopass-project, .fadeInAboutMe .bg-nav, .fadeInAboutMe .content-profile, .fadeInAboutMe .image-profile,
+.fadeInHome .home-container, .fadeInHome .contact-container, .fadeInHome .gopass-project, .fadeInHome .bg-nav,
+.fadeInHome .content-profile, .fadeInHome .image-profile, .fadeInHome .project, .fadeInAboutMe .home-container, .fadeInAboutMe .contact-container, .fadeInAboutMe .gopass-project, .fadeInAboutMe .bg-nav,
+.fadeInAboutMe .content-profile, .fadeInAboutMe .image-profile, .fadeInAboutMe .project,
 .fadeInProyects .home-container,
 .fadeInProyects .contact-container,
 .fadeInProyects .gopass-project,
 .fadeInProyects .bg-nav,
 .fadeInProyects .content-profile,
-.fadeInProyects .image-profile, .fadeInContact .home-container, .fadeInContact .contact-container, .fadeInContact .gopass-project, .fadeInContact .bg-nav, .fadeInContact .content-profile, .fadeInContact .image-profile {
-  animation-duration: 3s;
+.fadeInProyects .image-profile,
+.fadeInProyects .project, .fadeInContact .home-container, .fadeInContact .contact-container, .fadeInContact .gopass-project, .fadeInContact .bg-nav,
+.fadeInContact .content-profile, .fadeInContact .image-profile, .fadeInContact .project, .fadeInProyect .home-container, .fadeInProyect .contact-container, .fadeInProyect .gopass-project, .fadeInProyect .bg-nav,
+.fadeInProyect .content-profile, .fadeInProyect .image-profile, .fadeInProyect .project {
+  animation-duration: 2s;
   animation-name: fadeIn;
   animation-fill-mode: forwards;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-name: fadeIn;
   -webkit-animation-fill-mode: forwards; }
 
-.fadeOutHome .home-container, .fadeOutHome .contact-container, .fadeOutHome .gopass-project, .fadeOutHome .bg-nav, .fadeOutHome .content-profile, .fadeOutHome .image-profile, .fadeOutAboutMe .home-container, .fadeOutAboutMe .contact-container, .fadeOutAboutMe .gopass-project, .fadeOutAboutMe .bg-nav, .fadeOutAboutMe .content-profile, .fadeOutAboutMe .image-profile,
+.fadeOutHome .home-container, .fadeOutHome .contact-container, .fadeOutHome .gopass-project, .fadeOutHome .bg-nav,
+.fadeOutHome .content-profile, .fadeOutHome .image-profile, .fadeOutHome .project, .fadeOutAboutMe .home-container, .fadeOutAboutMe .contact-container, .fadeOutAboutMe .gopass-project, .fadeOutAboutMe .bg-nav,
+.fadeOutAboutMe .content-profile, .fadeOutAboutMe .image-profile, .fadeOutAboutMe .project,
 .fadeOutProyects .home-container,
 .fadeOutProyects .contact-container,
 .fadeOutProyects .gopass-project,
 .fadeOutProyects .bg-nav,
 .fadeOutProyects .content-profile,
-.fadeOutProyects .image-profile, .fadeOutContact .home-container, .fadeOutContact .contact-container, .fadeOutContact .gopass-project, .fadeOutContact .bg-nav, .fadeOutContact .content-profile, .fadeOutContact .image-profile {
+.fadeOutProyects .image-profile,
+.fadeOutProyects .project, .fadeOutContact .home-container, .fadeOutContact .contact-container, .fadeOutContact .gopass-project, .fadeOutContact .bg-nav,
+.fadeOutContact .content-profile, .fadeOutContact .image-profile, .fadeOutContact .project, .fadeOutProyect .home-container, .fadeOutProyect .contact-container, .fadeOutProyect .gopass-project, .fadeOutProyect .bg-nav,
+.fadeOutProyect .content-profile, .fadeOutProyect .image-profile, .fadeOutProyect .project {
   animation-duration: .5s;
   animation-name: fadeOut;
   animation-fill-mode: forwards;
@@ -137,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 0%;
   overflow: hidden;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   top: 0; }
 
@@ -147,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   bottom: 0; }
 
@@ -171,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 0%;
   overflow: hidden;
-  transition-duration: 2s;
+  transition-duration: 1s;
   transition-property: width, height;
   top: 0;
   background: #fff; }
@@ -182,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   bottom: 0;
   background: #fff; }
@@ -270,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 0%;
   overflow: hidden;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   top: 0;
   background: #252525; }
@@ -280,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: scroll;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   bottom: 0;
   background: #252525; }
@@ -298,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: scroll;
   transition-duration: .5s;
   transition-property: width, height;
-  top: 0;
+  bottom: 0;
   background: #252525;
   position: absolute; }
 
@@ -309,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: scroll;
   transition-duration: .5s;
   transition-property: width, height;
-  top: 0;
+  bottom: 0;
   background: #252525;
   position: absolute; }
   .fadeInProyect .bg-nav {
@@ -334,27 +344,86 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 22px;
   letter-spacing: 1px; }
-
-.gopass-project .bg-project {
-  background: rgba(0, 0, 0, 0.75);
-  width: 100%;
+.project img {
+  width: 50%;
+  padding: 167px 30px; }
+.project a {
   position: absolute;
-  height: 500px;
-  display: inline-block;
-  float: left; }
-.gopass-project img {
-  width: 100%;
-  float: left;
-  display: inline-block;
-  padding: 50px; }
-.gopass-project a {
+  right: 30px;
+  top: 400px;
   color: #fff;
-  font-size: 20px;
-  font-weight: 100;
-  border: 1px solid #fff;
-  padding: 20px; }
-.gopass-project h4 {
-  text-align: center; }
+  font-size: 16px; }
+.project .close-project {
+  top: 30px; }
+
+.project1 {
+  background: url(../images/p2.png);
+  width: 100%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .project1 img {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    padding: 50px; }
+  .project1 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #fff;
+    padding: 20px;
+    background: rgba(37, 37, 37, 0.6); }
+  .project1 h4 {
+    text-align: center;
+    padding: 231px 0;
+    background: rgba(114, 173, 171, 0.5); }
+
+.project2 {
+  background: url(../images/p1.png);
+  width: 100%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .project2 img {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    padding: 50px; }
+  .project2 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #fff;
+    padding: 20px;
+    background: rgba(37, 37, 37, 0.6); }
+  .project2 h4 {
+    text-align: center;
+    padding: 231px 0;
+    background: rgba(114, 173, 171, 0.5); }
+
+.project3 {
+  background: url(../images/p3.png);
+  width: 100%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .project3 img {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    padding: 50px; }
+  .project3 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #fff;
+    padding: 20px;
+    background: rgba(37, 37, 37, 0.6); }
+  .project3 h4 {
+    text-align: center;
+    padding: 231px 0;
+    background: rgba(114, 173, 171, 0.5); }
 
 .fadeOutContact {
   z-index: 1000;
@@ -362,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 0%;
   overflow: hidden;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   top: 0;
   background: #252525; }
@@ -373,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-property: width, height;
   bottom: 0;
   background: #252525; }

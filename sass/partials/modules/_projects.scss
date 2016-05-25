@@ -1,22 +1,20 @@
 .fadeOutProyects {
-	// position: static;
     z-index: 1000;
     width: 100%;
     height: 0%;
     overflow: hidden;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     transition-property: width, height;
     top: 0;
     background: #252525;
 }
 
 .fadeInProyects {
-	// position: static;
     z-index: 1000;
     width: 100%;
     height: 100%;
     overflow: scroll;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     transition-property: width, height;
     bottom: 0;
     background: #252525;
@@ -37,7 +35,7 @@
     overflow: scroll;
     transition-duration: .5s;
     transition-property: width, height;
-    top: 0;
+    bottom: 0;
     background: #252525;
     position: absolute;
 }
@@ -49,7 +47,7 @@
     overflow: scroll;
     transition-duration: .5s;
     transition-property: width, height;
-    top: 0;
+    bottom: 0;
     background: #252525;
     position: absolute;
 
@@ -81,18 +79,29 @@
 	    line-height: 22px;
 	    letter-spacing: 1px;
 	}
+	img {
+		width: 50%;
+    	padding: 167px 30px;
+	}
+	a {
+		position: absolute;
+	    right: 30px;
+	    top: 400px;
+	    color: #fff;
+	    font-size: 16px;
+	}
+	.close-project {
+	    top: 30px;
+		
+	}
 }
 
-.gopass-project {
-
-	.bg-project {
-		background: rgba(0, 0, 0, 0.75);
-	    width: 100%;
-	    position: absolute; 
-	    height: 500px;
-	    display: inline-block;
-	    float: left;
-	}
+.project1 {
+	background: url(../images/p2.png);
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 	img {
 		width: 100%;
@@ -106,9 +115,67 @@
 	    font-weight: 100;
 	    border: 1px solid #fff;
 	    padding: 20px;
+	    background: rgba(37, 37, 37, 0.6);
 	}
 	h4 {
 		text-align: center;
+		padding: 231px 0;
+    	background: rgba(114, 173, 171, 0.5);
 	}
 }
 
+.project2 {
+	background: url(../images/p1.png);
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+	img {
+		width: 100%;
+	    float: left;
+		display: inline-block;
+		padding: 50px;
+	}
+	a {
+		color: #fff;
+	    font-size: 20px;
+	    font-weight: 100;
+	    border: 1px solid #fff;
+	    padding: 20px;
+	    background: rgba(37, 37, 37, 0.6);
+	}
+	h4 {
+		text-align: center;
+		padding: 231px 0;
+    	background: rgba(114, 173, 171, 0.5);
+	}
+}
+
+.project3 {
+	background: url(../images/p3.png);
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+	img {
+		width: 100%;
+	    float: left;
+		display: inline-block;
+		padding: 50px;
+	}
+	a {
+		color: #fff;
+	    font-size: 20px;
+	    font-weight: 100;
+	    border: 1px solid #fff;
+	    padding: 20px;
+	    background: rgba(37, 37, 37, 0.6);
+	}
+	h4 {
+		text-align: center;
+		padding: 231px 0;
+    	background: rgba(114, 173, 171, 0.5);
+	}
+}

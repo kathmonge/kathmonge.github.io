@@ -61,20 +61,22 @@
 }
 
 .fadeInHome, .fadeInAboutMe, 
-.fadeInProyects, .fadeInContact {
-    .home-container, .contact-container, .gopass-project, .bg-nav, .content-profile, .image-profile {
-        animation-duration: 3s;
+.fadeInProyects, .fadeInContact, .fadeInProyect {
+    .home-container, .contact-container, .gopass-project, .bg-nav, 
+    .content-profile, .image-profile, .project {
+        animation-duration: 2s;
         animation-name: fadeIn;
         animation-fill-mode: forwards;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 2s;
         -webkit-animation-name: fadeIn;
         -webkit-animation-fill-mode: forwards;
     }
 }
 
 .fadeOutHome, .fadeOutAboutMe, 
-.fadeOutProyects, .fadeOutContact {
-    .home-container, .contact-container, .gopass-project, .bg-nav, .content-profile, .image-profile {
+.fadeOutProyects, .fadeOutContact, .fadeOutProyect {
+    .home-container, .contact-container, .gopass-project, .bg-nav, 
+    .content-profile, .image-profile, .project {
         animation-duration: .5s;
         animation-name: fadeOut;
         animation-fill-mode: forwards;
