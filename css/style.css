@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   transition-duration: 1s;
   transition-property: width, height;
-  bottom: 0;
+  top: 0;
   background: #72adab; }
   @media (min-width: 900px) {
     .fadeOutAboutMe {
