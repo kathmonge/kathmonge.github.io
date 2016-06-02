@@ -63,7 +63,7 @@
 .fadeInHome, .fadeInAboutMe, 
 .fadeInProyects, .fadeInContact, .fadeInProyect {
     .home-container, .contact-container, .gopass-project, .bg-nav, 
-    .content-profile, .image-profile, .project {
+    .content-profile, .image-profile, .project, .info-container {
         animation-duration: 2s;
         animation-name: fadeIn;
         animation-fill-mode: forwards;
@@ -76,7 +76,7 @@
 .fadeOutHome, .fadeOutAboutMe, 
 .fadeOutProyects, .fadeOutContact, .fadeOutProyect {
     .home-container, .contact-container, .gopass-project, .bg-nav, 
-    .content-profile, .image-profile, .project {
+    .content-profile, .image-profile, .project, .info-container {
         animation-duration: .5s;
         animation-name: fadeOut;
         animation-fill-mode: forwards;

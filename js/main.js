@@ -14,6 +14,7 @@ myApp.controller('mainController',['$scope', '$timeout', function($scope, $timeo
   $scope.proyect1 = "fadeOutProyect"
   $scope.proyect2 = "fadeOutProyect"
   $scope.proyect3 = "fadeOutProyect"
+  $scope.proyect4 = "fadeOutProyect"
   $scope.contact = "fadeOutContact"
   $scope.itemAboutMe = "inactiveAboutMe"
   $scope.itemProyects = "inactiveProyects"
@@ -55,13 +56,16 @@ myApp.controller('mainController',['$scope', '$timeout', function($scope, $timeo
     $scope.proyect1 = "fadeInProyect"
   };
 
-
   $scope.toggleProyect2 = function(){
     $scope.proyect2 = "fadeInProyect"
   };
 
   $scope.toggleProyect3 = function(){
     $scope.proyect3 = "fadeInProyect"
+  };
+
+  $scope.toggleProyect4 = function(){
+    $scope.proyect4 = "fadeInProyect"
   };
 
   $scope.closeProyect1 = function(){
@@ -74,6 +78,10 @@ myApp.controller('mainController',['$scope', '$timeout', function($scope, $timeo
 
   $scope.closeProyect3 = function(){
     $scope.proyect3 = "fadeOutProyect"
+  };
+
+  $scope.closeProyect4 = function(){
+    $scope.proyect4 = "fadeOutProyect"
   };
 
   $scope.toggleContact = function(){
