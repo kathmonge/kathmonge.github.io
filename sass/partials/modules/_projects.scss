@@ -67,52 +67,68 @@
 .project {
 
 	h4 {
-		color: #fff;
+		color: #A9A9A9;
 	    font-size: 21px;
 	    font-weight: 100;
 	    text-align: center;
-	    margin-top: 100px;
+
+	    @media (min-width: 900px) {
+	    	margin-top: 100px;
+		}
 	}
 	p {
 	    margin: 50px auto;
 	    font-size: 12px;
-	    color: #fff;
+	    color: #BFBFBF;
 	    line-height: 22px;
-	    letter-spacing: 1px;
 	    width: 80%;
+	    font-family: roboto;
 	}
 	img {
-		width: 50%;
+		width: 100%;
 		padding: 50px 30px;
+
+		@media (min-width: 900px) {
+			width: 50%;
+		}
 	}
-	a {
-		position: absolute;
-	    right: 50px;
-	    top: 400px;
-	    color: #fff;
-	    font-size: 16px;
+	.close-project {
+	    position: fixed;
+	    right: 30px;
+	    top: 30px;
+	    color: #A9A9A9;
+	    font-size: 21px;
 	    font-weight: 100;
 	    padding-bottom: 5px;
 	}
-	.close-project {
-	    top: 30px;
-	}
-	.see-project {
-	    border-bottom: 1px solid;
-	}
-}
 
-.cancel {
-	background: url(../images/cancel.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	.see-project {
+		float: right;
+   		margin: 0 40px 100px 0;
+   		color: #A9A9A9;
+	    font-size: 16px;
+	    font-weight: 100;
+	    padding-bottom: 5px;
+	    border-bottom: 1px solid;
+	    
+	   	@media (min-width: 900px){
+	   		position: absolute;
+		    right: 50px;
+		    top: 400px;
+	   	}  
+	}
 }
 
 .info-container {
-	width: 50%;
-    position: fixed;
-    top: 0;
-    right: 0;
+	width: 100%;
+
+   	@media (min-width: 900px) {
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	   	padding: 30px;
+	   	width: 50%;
+	}
 }
 
 .itemProject {
@@ -127,11 +143,16 @@
 	}
 	a {
 		color: #fff;
-	    font-size: 20px;
+	    font-size: 14px;
 	    font-weight: 100;
 	    border: 1px solid #fff;
 	    padding: 20px;
 	    background: rgba(37, 37, 37, 0.6);
+
+   		@media (min-width: 900px) {
+	    	font-size: 20px;
+   		}
+
 	}
 	h4 {
 		text-align: center;
