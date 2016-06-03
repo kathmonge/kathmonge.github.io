@@ -89,7 +89,10 @@
 	    font-weight: 100;
 	    letter-spacing: 1px;
 
-	    @media (min-width: 600px) {
+	    @media (min-width: 300px) {
+		    width: 80%;
+		}
+		@media (min-width: 600px) {
         	font-size: 14px;
 		    width: 87%;
 		}
@@ -107,7 +110,7 @@
 	    background: #72adab;
 	    width: 50%;
 	    margin: auto;
-		padding: 5px 0;
+		padding: 5px 0 40px 0;
 
 	    @media (min-width: 900px) {
 	    	padding: 25px 0;
