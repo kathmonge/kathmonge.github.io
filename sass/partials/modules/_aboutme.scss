@@ -82,15 +82,15 @@
 	}
 	p {
         font-size: 12px;
-	    width: 83%;
+	    width: 77%;
 	    padding: 30px;
 	    float: right;
 	    color: #EFEFEF;
 	    font-weight: 100;
 	    letter-spacing: 1px;
 
-	    @media (min-width: 300px) {
-		    width: 80%;
+	    @media (min-width: 480px) {
+		    width: 83%;
 		}
 		@media (min-width: 590px) {
         	font-size: 14px;

@@ -243,15 +243,15 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 0; } }
   .content-profile p {
     font-size: 12px;
-    width: 83%;
+    width: 77%;
     padding: 30px;
     float: right;
     color: #EFEFEF;
     font-weight: 100;
     letter-spacing: 1px; }
-    @media (min-width: 300px) {
+    @media (min-width: 480px) {
       .content-profile p {
-        width: 80%; } }
+        width: 83%; } }
     @media (min-width: 590px) {
       .content-profile p {
         font-size: 14px;
